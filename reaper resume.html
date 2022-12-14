@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font: 16px Helvetica, Sans-Serif;
+            line-height: 24px;
+            background: url(images/noise.jpg);
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        #page-wrap {
+            width: 800px;
+            margin: 40px auto 60px;
+        }
+
+        #pic {
+            float: right;
+            margin: -30px 0 0 0;
+        }
+
+        h1 {
+            margin: 0 0 16px 0;
+            padding: 0 0 16px 0;
+            font-size: 42px;
+            font-weight: bold;
+            letter-spacing: -2px;
+            border-bottom: 1px solid #999;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 0 0 6px 0;
+            position: relative;
+        }
+
+            h2 span {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                font-style: italic;
+                font-family: Georgia, Serif;
+                font-size: 16px;
+                color: #999;
+                font-weight: normal;
+            }
+
+        p {
+            margin: 0 0 16px 0;
+        }
+
+        a {
+            color: #999;
+            text-decoration: none;
+            border-bottom: 1px dotted #999;
+        }
+
+            a:hover {
+                border-bottom-style: solid;
+                color: black;
+            }
+
+        ul {
+            margin: 0 0 32px 17px;
+        }
+
+        #objective {
+            width: 500px;
+            float: left;
+        }
+
+            #objective p {
+                font-family: Georgia, Serif;
+                font-style: italic;
+                color: #666;
+            }
+
+        dt {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: right;
+            padding: 0 26px 0 0;
+            width: 150px;
+            float: left;
+            height: 100px;
+            border-right: 1px solid #999;
+        }
+
+        dd {
+            width: 600px;
+            float: right;
+        }
+
+            dd.clear {
+                float: none;
+                margin: 0;
+                height: 15px;
+            }
+    </style>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Actual Resume</title>
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <div id="page-wrap">
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOoAAADYCAMAAADS+I/aAAABDlBMVEX///8AAAB6hYr0GCBCQkK+w8ZFRUX3GCD29vb/GSH7GSH7+/vz8/N9iI03Nzd/i5Dt7e3U1NTb29vm5uaoqKg2NjbIyMg/Pz+6uropKSkvLy+MjIyAgIB6enqurq6ioqJPT0+UlJQXFxe+vr4kJCRbW1tnZ2cbGxvMzMxlZWWampp0dHTAxcgMDAxueHyGhoa0EhhzCw+RDhO5AACiEBXiFh6GAACxERdlbnI0BQdnCg1ufn5PVllHTVBZCQyBDREgAwSWAADGAAAAJyc8VFQ8BgjaFR3MFBviAAtRZGSKDRIRAQJaCQxJBwmUAACjAAAfPj4AFxcqRkYZAgMoAADWAAo7MDG+AAAwJyc3BQc3tFQQAAAbpklEQVR4nM1dh5ubRrDXnmRUTwXUC0K9nU62L+e4xrGduMRxnGK/vPz//8jb2QILu0gsQtL7fV/iuxMChp0+s0MqdTzM+sBArWoCZxLR34zqTbOU8FmPgFWfIQYz2TPz07Y2w+blCTZHUySgluS5LTRtlbudxZieezVM9Ox6qK4XKIAk17WNukYmYxiZzvXTly1CsDNMmHGiYeIE6QQkKK991MoAuq+uMSpXT1914AqDZnKXiILSSEUnxiK5a3SRAZQai6fXVwBK7hZfZLNM7ioHYM5DCMWYJXWRIlpQUtGVB0zu7Uvg5ZGV1HX2YWkEyfvpYfo395dhUpdBHUJqZlG58gFT+wrk9uSMvCwHCX18n8+m84/d3xN63kNU5qJ6FcR15WkXC4udzJXUqLUCdH57WChk0xj51/xP3WQutUIZn6gql7aezLVkWLMAoZ8f5gmdhNbfk2VhtJVF1U/t1Ut8sdOsbF9i3YJLKEb2Z/73XAIXww4EFdVxJYxWSuw0eXXcDhL65b6QFpG9559sErlcl1DayKj41yMWs/EsWa+xKjkMP+SzaT8KDxPUTDvqQBhTpah6qNx2k9P6gHqQ0M/vC2kJrmpyjr9iizkQ6HYvpUDsU4QaSZnZUkZi3nRwSem6cnE93lVlDkRmGy6qLhdfG0ktrCSl6HWeCGc2W8CmBsMV1/dJLWuNORCN1n7+9RbWKR5P6Uai9HE+nS3k02/vvr75483Xu+8fC3mmi10WPnZZh6hBFnX6MgqpeGEbx1+z1JUoxQop//01+vPF2rbbdr1y+8u7fx59pWubZccc6wrPmQOxPSiqfGFfHmtjaxKhmNLC/bdPN77DirU1ugdas1wLH6knENdKh0WVL+wtDvCOuKIspph7C//+peAVCxFVlf9CD+sfcVVs25gDUS5H4l9K69UCObGvuJYpfZ0v3P2pPNhEWVEzxb4oYMIciE40UeXEdlA3pnKSPEEcr+Wz79+FHL78FRRz/hE98ijB6TEHIrKoUlLrGzSO5ZUqAvCfsfKRXVwul8Mnec8/PCrAMbRF9epq3b65WeLVieEmqlIN99n8M1lOu9x+f3qb9QzOMbofjamoNqLy78i+ubl58ODBTS8GrbI5RQgHp3+s+QHu4k48sraC27+LT6nJHIiIolqpPyB0Am5GaKsprzsFpY/y2e9/8wMGyPvJzRSaXzAL558fq5hs6kAY49vK9UFih22XTkLrDk21Lib59xifs+kC545SR4jVdh67vrjLuko4fiC54VoJdV893UsuCKhIKMZygAyNazUVlKIP2cITluGwyB/cdPsQ/zKiP4LFyf9KPo4fto6pVmLZnW3m6VVFRW3FlujEq3pzk0HzyJeqqih9ns/ev/Mo7U6EL1g4nN224acHOBTI/ngcB5dYWNNF7VRtSNTj9OVtgFpRQEVC2+urSgetD1+FQipQAPBq/UTXMYfkBJbZ3yI0t4upvz9muSccN33ZpA6EMWXuJa2AjV8J1AYE1CN0BJ9ej6NeW5nR/qGQ/f4L/dxQu7jFKiin2vN8ukDdiLgu6YjmRbGoen+bgEVYvCScvFYxLiGUm+HbiCUVheOL0D8FLIKUQHv/ef78mM1+OIqDHS6qfmlvArWNp7IiChKKl/Up6kS4UE5FKXqY5YtaVKxpczDb1JlyfvCkgDW1X2/pgTkQDdm5bGOGmvaUysj2OVaVV1F4KpjsJXiWT+d/p3c+Qu3gV1iOjTlNyOXgUSxKTRrWuKLqg4XdIbQJaKQgoUBr57C4Ku0MXtR0mqlftAp+xU35U1qv/82ysLUVi1TuQGxDBMDGNn1me8QqCAUgdMhr2qoo/YYtyBuqdJeSuy+EeuTktUeFdFr4XRcDVliVnylHDbPRjOngEEKvrmeHrOtQuag/ZtP5b1QW+xJXCsdRnsEczCL0WOamg5io7qnImFjMVqCgbuwwV6rSPXB5JaXgAmVZQC4xpcjxlIN/+ZguPI4trDnqQBid/bEREDt/EEooZeF9JxgpKX1cSGffvqBHED+k2pwseazUEw7skb9cv+XmJk42jRVWjfEhWwVlwVd7/OPrl+x+1FAv6j12gO6Yr4UptGgxOUOfuuhw0MBt+DXLhTUGqWtWWI3wnCZYsTwNj94r4z0OgFpSf4Lkwp3rVlruB4RW0ThRUm1MKnP5Y7SBzGhetBwpYY9VYvcqbGGxIxH+uJTql1ia7NsrfpCXGSZJlZVw5NoltUBzETH0Ei2sYlGN5ICU8JN+GbawWDOFnWSp5l+SCfz4iR1kCZ/AoolBPHUuhhC0UsuqX0phhdXDosqB1eI0bGFvQ0NXdefKI1J0y/NEoS18BIsmusxUVb1468bn+ulgVlg1kBP5K/i2Z+qFrbTCEgTqRf1Amx2eMddB1LiwioLPzO7ub1KVE/+iAdaZVY4ecpLsVlmtisOWdRLOv/jWn7BYfCB8RPxxL+HGDCEi+eBn8JetNqkNxERVJ1+TM9D2VpmoaKmldRAkkuB5nhYUvzNhlWTTXVYmmDdPgOMLNJmmTSpzIBaa3xxh70nFxLdqJaxe1B9Z+TTPPFpRVukylgxviTGeQjaY+0u61oYVVg3tUKGG/QkFrVgJK27BUtCJEK2wwb2/oatWEj7jXzXttZtqKiJaaP5R5OnIYIXV1l5HR4lSA3VkUrFtVSSkbSWlP+fd+j+jzJNNuo6WP9RZf6WVVuoa6mZIWWfWIVddiTkay1anorJaalF95PZ3uKlR7mhwKdj5JB8VxN4eKYw/AOZALGI1P2GBlZQT9oTlSpnUJukTVVISpwfmaJ+hl/mxN+2ataQs/OIr/4JPgCOCFVaNmNUtbOPl5h/UkI5Te4XvPVILX7lz2NxtRlgKQU9Rr8GctKlUmt84w+fJ1zXdJVZYbcWt+DRlWrG9kRI3SkqR2J+U/9nHqiOs2+yA2XK1WDr/Gb6uGbGywmoXTQ4fq0RNohUrJknFKSn9NS+QiuXPS6HU5vCwAurjlzv30eS/wfc1FWkGMVGN3UxnSrRWZOt+QCsRFr6jlbjaejMgCsf2C+PotfdkqLukyYg0L2oc0xgv0Xr9SvKYlLL62N9gl389yrV93xE41J79ly8cRSorrLaO6hoxg3r4VroLpQb+wddhV8jfoZFgBmx/va3U//wmzdss8z/rM3CdOhBdbRvlwzJAa0VKsyrtqmhrCtk3W38WDwVjl+Lw3U//0sZvqoH11BItrBrTIzextNE2wMEBp01VPiYZCEpo/v7J3w/83yD+VfA6VuWv30hfKfm+RiiW4p1ZxpGtQOBeTgV/GOvgwG2Y+1Y1++E5eld5wdDvr0vkzpDf7SqZ7fWLT9Mvzx/yBL+WC8EKq8G6VAxg9hBplaJWFam/cT3z/v7+/iPD3XXQAbGWduXTn+jL6zd337N56K5keTQtV5YVVhV1KW1kkNAygsObQJ1B1dTiugRZFzjGeeAPuVv//P7k69uPmMQCb5nlLT1avYa0sKquS2miKKom7AcHHrmyMuXzIZgefl71k/qnQCNTv2yPkV7OmxZWQ+tSWjDR1lvWW8kSqEhFv0m05lHKz8CNwCFZVnTUze6zwqpG18YeDFHZFdcKKgc+HSlpfRhs0//4S85Pw//4SS2k/6Pf1OwQYIXVvXUpDTie11RpBIVVXTAXgxuyZv+OLL+K9JOa5z3BusqFFlaxqCazSxVTIwhrMEfQU9Pq35RQ+ONm6Xfc/lcgNZtlzDvW1i3MgUhEVAFt1K24llWKJtWkPvOT+qUUIPUvwclnHR9xTOOCFlaT2xg681hYrku7+aVhyhQcxS++qBWlAqS+46QW0qy/ME68yQqrjeR2CHksrMow8V1S4AyVvMLGT966QfWm5l+zv1k6Kf8DO3wWJzPUpJvLI9alIqHOE6bXLTlZxVOfVAmaU5lWKD+afnb49JEQ+uEZOzheXEILq9HrUlHQYbuvsF6SHyDfg8Fii5HLw9xFKDxZpqp+n/LFd+xC3XPejbWkKV5Y1alLHUaNaSaslxT2oO2n1eqw3/9jejj/KybF7y0N7/LeFux23FwJzYtq1aUOg2sm2V8CcFq528iLNJ/vveqjn8maT37khDrFasy8EC2sJiqqKci20r3q12q9zn1h7uy4+4oeQqfAd+j/cHyxc9FVXzaEgvE8AFpYTVZUU5BwIMta2Y6VH7u7VTl/899f57PZr/DHHV5ywZ6wfginRB5LvMQmLawaWi3aEVBCZF8zjuNCDqjRgG7EeZEz8bP7/GtYtGY/VRSYv8QVL2aIXky7SEdelGM2JoajT5b12tiTxKma4mdumfnhM/I7SpEpFORR4ONy2AQ7FnTINHPxMvNs5EX3iJZ/NUok+aK0NiFwBZYWPmemA/8QXiVm1Foh1CGVt3iOHe3MMhbx+hL3gUjr9UpDrnjqacfujKa84X9NuvzWnGqkRZSuYwl05IUhBZbHwwLbqjas4V8RXSGaFKE2kIlXk/5tFkuH0sJqjBLyYczAZbrVstd0owbbOtAijExvrEeYbtOivNePZVipAxG/LrUHSwTDUfRUSAlqHfTHXXUNLj91+60RLCnPHQzjGFbmQBxRl9qDKQIfQi+sLHa5zsHf2znFFPttVuuuhD1yMVaGORCRdhdow0Yvryu62tJkZq8JmruJegbm2dKyhwxLPCaGYaUjL46rS4UDe4cVXd+kzjxjRswEGVtk9Ccp8YmV4hhWOvLiyLpUKDbotrLQ7DnYMFni3gWPW9diIimOYSV50aPrUmGo4RB9qnaCQxF0xl1RF925jt6uSnovxIGI0agXDWMU7gSrkQtmo11WFcUzhmGlhdXWUeMO9mGNnjb07moZ1DiuWS4JBmanbzHoyItTiSrYMqOlR+ow6DMrna0YhpUUVhOpS4Wggcp6pK6CzrjSguobVtqZlVyyW8YQadano1l4fcNKO7NaydSllKjqkVqaR1MbOW1HoEfCmiRKyKFo6JDaQ1ErTtqG1Ti1qIIOjmxXaVNINH3T1TWs1IE4oaiCVEVspp6wKb3Rjl5p3jPrzArf2pgEorGayXeoRvSYd5qcSAurSZWQQzCIoPOq3v6oiCkCzOyOreFGkMLqoa2Nx6J5UKUWxR0YEe0lzZk7dtTiDRl5kXiyO4DioXXybwiMyJdus1c0allnVnIlZDX2J0d9m4xmkb1IsaciArW0Myva1sYToeabBbzWMJc+VjhILenMSroupYOqf2pCDbNl5PSiNC85lNpiA81b5xDVcBT9g9EWJTAJkRsGVVsm1dR2EUz57GSMZEvIGgjMuiP2dBB970tIU9BMonaHOaUKqq+TfF0qGgKtwdT4LqJnQ9QbsSi1YhhosbqFPUYJv4shMsYKSnMaOWP1yBCZWsf1GvDD2Z4gsX8Q/vGbBr/96CFWyE7CICf7XHDMxpmzTNP3wd/Fz/44QrP+brQe1u32pLmsEZgUFkUVUCqVcrmSmkIRoM1X/rrbFKFB4iXHA/DdExeh4Bz6mPjyiOyqAte+hGZiVqM4y81OOF9eCd8gASGwKpaqlllbNidt2x3t7azXI0APsNvt+oABhvJtIRj3+fw99CEugWWXNLClT7OGL7Uco8U51ZOvsV0tPq7hDA8XQkiFJhnYrFEFm5oaQDsAszI2SSoPjxr2qAvxzkIKHa47FB5Nqzfpw0xHsosXMlublNnAfAxiW12aA6r2SrMT1agO3WPIE3Y/d8LPo2Rh2GOX/YF0VLQhwb1e9Mqpag8Z/T43PBoO6LHweXVqLeH1ZO1J2CinIcIeO+js34Ceh1pUqe3M6UxErup1cxhHwHdralvq2c19WxJHClJ/ZNMr10RUyVEtqocmPG5K6oUih+GXMfWqCjp636kUeydhdAgMApm4eS2es8TK0NiM7OXkfHHryndrah9cmNuy71QK//ADG+9iYatKtM+E50FQMVUyJ8Pd4mz8W/TfmlrDBie/hUEeFPieDe0BISCPcc6U0cRh3zkf/wZnUyoPEoLZvYlB2UG8z5I5IAu3ssMv4LB64xn5N7gQSm6aHfjchTTjHUj9nTALJbXKRLXKSZ6djX+lXUXKZ9zxPj+Quw0OpU3T0QI9zsC1DD1uwNyu0vn4Vwqq5fkRKZ89OtDoGdwUC33iiHTv0fjXpKuZ4/Xy4fn8fdnFUSybuPSH4ulA7uWeuoVgSkkEZ9Hz97rOnCg43eFD8aEINBW5B3GpDnYvdHxnu8+CW0iyVKQ7xEZbEyS1hvWRDUmBs/m/qv3mciuRaC8P8ps/I/E+S2bhwQdDyEBuumW0NegD6y+s/vmcQlX8LcdpokAfds19tZAPWRhH6sDfLUhajVtGp8fJszL0k3NA6aHLD3okfBihOCe+z+lhFtxCyqUOKuWQkTE8N6Qde/63NtTTKSUlLMbuEbojRAXwuHDvcv0SDZaQ2PcKJEdPSYgO6p+PO2XDmc03g36PpM2kUqmopqM0pQgRxCOykXfJzzPrQAmZG+/2GStUEdP3Ypo4UsnKcySfkRddMk2H5aUMdSmuxzvJ71GIglovg8atVa+tUIkid0drpvDUXRZ2CXonMqAulVsQ7dY+Z1bJRR0WrswGqfYC1PqMb7RmFs/p+PANudnfKnS2wBy/XBnhAD3mQOyjAE76gOYGrAkwn+Fz//zOXrRTut+BnejcK2lCv12ZKHHC4qdqpgwFWE2feoBdY2KNYRKDVN+XuC0eQbmczfEz+90kXnupA5O/DtJep5acvulONKD1OKSK3+J+8wy1TrUJIwKwd94Hiak5tZS5Zon3dT1lNVCn6h0jIPKNjtyv8AiCaKUk35qtAWuKpnRq9QB2DWERIuQhdqesxOCviUd3Wt1HxK8GWul0nd170eZpM7ykqSrWk03ya4kalCXfqOyfLKbRV8XWlecIJ6CVTtfZvQ8DtN26YUzJwCaCFspM9txHzM3xUaq1CZPGCdzr6GGtdNp20TA4KFOsuroX/m3BXVg7x6F3g6qUXf2kajnopEjNFZwDWumk7aJqFLvU3A22btFvCT/RDCJ4upMBto5jKfzR47/i3KsYkIb907aLqpAb8+y25ThChRMTZ5KXNFiphgmhzy749k7dXFCtzE5PtNKJ20UVyHm3PMF0NdylYkOTsZDZJJZroFygmhi7bNZGHePU7aIyigsejLVJHLfrMcewyQWrxgx/Ew0DSZnYe2t7qHGBHrQysmewqvAC6PqckI0tyqZdnLkegsksKJqP/KTGznsZoJWQc/TNa2EFS1Nug5+6wXwFWWjIR9jrshCO1mgyGs0Dg/FibxgBrXTuHrQ11YKtDVgOk2zBq6Ey5C6bon7tgQmtoWFgNmncLl4LLQwj1szu+KixmLMHTZM54v4UEcrB9iFfAZtk+PBf/JSiTMzLEq0Ub2Z3bLD8R58kFByiied4NcE3dXxKA6w9fiwBUuNumd6BVjpfhQawoUzaI5TahB9ryMH/YUs/9XVQ9pG5Rm0pgRrzui2slU614ToEPeIltcnq5GjOo4HX2QZG9j/0Cdphb0l6E0zM64JWOrev72C/16JllBW59BKI38Efpr5YEgrqS/k9iPGuaoJWOtWG61AsUHNBYlFg3BSr5hIxNfx0bOEZSNXheEkEG7TSGVPcFFXu81AvsIqcFNu/OfcrSAciTekV4PGCsD7sTTh+ELAullQmJ2gLWmJIuBg5KYhQfb2NA6BKauWI58SW0Yl3cYaAzjroomJvBkoJfkFoXF7N/PdC0rSdIKnxOj3R9gK+PkcN2Gm4tYjvRMr3uabC7QtSGs/fgamxl9tvMidSV6OhM+vUl+v18rTZWPbChlGUp94aFoYcqy+MCFcxUncSe8rDzWPF1gNUNhIeWRgdbXbPzBmkT7wmhaNyM12s++2gC24N2zBzzirHrMQmWT55C02s2By00vm6WaSLk39KzNaxiRHroCiOJFLjuLE10Eox37p7NPh4lhoLltkMnlww9pAn1seJzetYK51kDloU8DZyvnOozopIg4BAyT1ccdToBmulk8xBi4IJY8Q2uwGLMnJtENhLP5ZIjTM5c4HA179QCS5XprTVeWViisw6OIHO2lfLliiNE5sX0RiLquaspwThICcFeogxLMmBDiaBmr1qC5j+pUArXagER7FC05xHaiqzVnioqtej6F9piLXSJXx9Dzg+a9r7S2uq7Zr6F5qj1mVKcB5IMmWvXlT1W+on/bZYK12gBOcDbDHfy1eqrdXaSZMcFKbOX4KTYO69c9WGee2gc4m10kXHQESC6rVj2k77EDUuOQYiIhSU6sfmK6yVLubrR4aKVO3YHHtYiY8nTxzK3mhd+wjjaVoXGgMRHTUVqbr6pYk65y7BxYByq7Hu+qyxVjpzCS4GlB3vurH5DGul08w8ThI7Fam6KXoEA0DPWoKLg5WKVM3YvIq1UuMi7XZakAYpARy9c4BWOnsJTh8qSnUr3yOslS7t6x9GUUmq5m3D24hOOEg1IYRM3NE7CdZK52+304bUHBCDVGjiuVgJLjqk5gAKLW9ggrqXK8FFh9QcQKGlTXuofLGRbxpQvjnai83raLs5GIU6KOm3hp0E8pwHAkYe7ZIwDmTH0NZI/lVEx2M5ms8cwxnU2e1LzQEUNEhxQ4G9QR284uT/X1g+EqhpESZVU8qcPO93zp7rFloF17iNtdIJXkV0FII2dBn6Klq6jGLhleRXS7S8EzArO1RuXWRHYzjkikXIm88Ri819zA3lD17I8p/XQJcrwYVArqNaoZMYydiOIPE74WcBWCtdrAQXApkgK3S+JsSeoJy7a547dQSu8G1Vhyae7anebxIPoqS26jZlxFEIqRuSX1vVPHeqIx4rnhdevHT+djsXRaYlc+1BBgvYeGaKoloGvYKIqlGl9gErbFN7JUoJ/4swp8ZKVV072ketS5bgesQuCoPYwdPjP9J0LZXH4Jgdd9ndU3EBbcOj4ofDxCwunS2Eff2LleBKJKLyBS1zzwckSqVGvARltoXAXSb2+xYv7zrHVVVRGC2Expf09ftErfjvvegaFnKPwMPhM3+Rq2X5otbINxjDT4nk0wwqaKULluDI+C5PNme9DnH1uL9LxCwXEtO4aMGy8+IrXWSLnWFEfUbSaWCjbutyJbgJJce9aXJDba9msXDfxnoAXf4D/rLV7rkZtxxdXpJ3wFqpe7kS3AiRJhU36obg04R1cdPb7hu/o2Hhb22ymZdF9FsDXdLXJ6HX3LMkC9dpDbMtWhi4NhpOibXSBUtwVJXMcp4rmFk3zVqzbR+SzyiwUxbXVRZ5m8slS3CcczeTRgKkBVAWcuRL8jaXi5bgkidQDQuMdWt6yRJcSBowaTgpCPSciPNtToQkZPIgxrCY8MMF2+1SZFj4qeGQC01mjdml61LNAXYAttvxotPpNlqtjOE4zmw2W63m8/lmMxgM+v3drtfrjUZrjOGwXq/bGO12e4LRbDaXSz6H3x3BDwP4ixcZixWC/wOogQdjyJ6SbAAAAABJRU5ErkJggg==" alt="Photo of Me" id="pic" />
+
+        <div id="contact-info" class="vcard">
+
+            <h1 class="fn">Grimm the Reaper</h1>
+
+            <p>
+                Cell: <span class="tel">666-666-6666</span><br />
+                Email: <a class="email" href="mailto:reaperofsouls@underworld.net">reaperofsouls@underworld.net</a>
+            </p>
+        </div>
+
+        <div id="objective">
+            <p>
+                Despite my cold appearance I'm actually very friendly. I maintain a well kept and professional wardrobe(funeral wear).
+                I am very punctual, as I always arrive right on time. However, I have trouble maintainig eye contact(I have none). 
+                I can commute to anywhere in the known universe, as well as the unknown universe, so workplace location will not be an issue.
+            </p>
+        </div>
+
+        <div class="clear"></div>
+
+        <dl>
+            <dd class="clear"></dd>
+
+            <dt>Education</dt>
+            <dd>
+                <h2>University of the Damned - Tartarus</h2>
+                <p>
+                    <strong>Major:</strong> Necromancy<br />
+                    <strong>Minor:</strong> Communications
+                </p>
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Skills</dt>
+            <dd>
+                <li>Soul Reaping</li>
+                <li>Grim Glare</li>
+                <li>Deathly Chants</li>
+                <li>Soul Binding</li>
+                <li>Scythe Sharpening</li>
+                <li>Excellent Time Management</li>
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Experience</dt>
+            <dd>
+                <li>Guide to the Afterlife: Creation - 1978 </li>
+                <li>Professional Harvester of Souls: 1978 - 1990</li>
+                <li>Wheel Throwing: 1990 - 1996</li>
+                <li>Soul Reaper of the Universe: 1996 - Present</li>
+
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dd class="clear"></dd>
+
+            <dt>References</dt>
+            <dd>
+                <li>King Tut (reaped in 1323 BC)</li>
+                <li>Alexander the Great (reaped in 323 BC)</li>
+                <li>Joan of Arc (reaped in 1431)</li>
+                <li>Julius Caesar (reaped in 44 BC)</li>
+                <li>Romeo and Juliet (reaped in 1595)</li>
+            </dd>
+
+            <dd class="clear"></dd>
+            <dl>
+                <dt>Sustainability</dt>
+                <dd>
+                    <script type='module' src='https://10az.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script><tableau-viz id='tableau-viz' src='https://10az.online.tableau.com/t/efrance/views/BMISfinalTableau/Sheet2' width='3440' height='1289' hide-tabs toolbar='bottom'></tableau-viz>
+                    I take sustainability very seriously, as you can see represented in the above table, my line of work is not only sustainable, but arguably beneficial to the ecological success of earth.
+                </dd>
+            </dl>
+            <dd>for business inquires please contact my agency's<a href="Psych.html"> website</a></dd> 
+        </dl>
+
+        <div class="clear"></div>
+
+    </div>
+
+</body>
+
+</html>
